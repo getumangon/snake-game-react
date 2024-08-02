@@ -1,0 +1,81 @@
+.App {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.scores {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+body {
+    background-color: var(--grey);
+}
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(30, 15px);
+    grid-template-rows: repeat(30, 15px);
+    border-radius: 100px;
+    margin: 10px;
+}
+
+.game-border-1 {
+    border: solid #2b3600 10px;
+    border-radius: 30px;
+    box-shadow: inset 0 0 0 10px #2b3600;
+}
+.game-border-2 {
+    border: #5d7e46 solid 8px;
+    border-radius: 26px;
+    box-shadow: inset 0 0 0 10px #5d7e46;
+}
+
+.game-border-3 {
+    border: #2e341e solid 30px;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 5px #2e341e;
+    background-color: #b2bd0a;
+}
+
+#instruction-text {
+    position: absolute;
+    top: 60%;
+    color: #333;
+    width: 450px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 50px;
+}
+
+.scores {
+    display: flex;
+    justify-content: space-between;
+}
+#score {
+    color: #a7e400;
+}
+#score,
+#highScore {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin: 10px 0;
+}
+#highScore {
+    color: #35be16;
+}
+
+#logo {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: auto;
+    height: 260px;
+}
